@@ -1,0 +1,1548 @@
+html, body {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  /*font-family: 'BenchNine', sans-serif;*/
+  font-family: 'Quicksand', sans-serif;
+  /*CENTRING:
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  End of CENTRING*/
+}
+
+/* bgColor = #F2F1EF
+mainColor = #32c4f6
+Headers #FFF or #2c3e50
+*/
+
+
+ul li {
+    list-style: none;
+}
+a:hover,
+a:visited,
+a {
+    text-decoration: none;
+    color: #32c4f6;
+}
+h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#fff;
+    font-size: 27pt;
+    margin-bottom: 2px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#ECEFF1;
+    font-size: 17pt;
+    margin-bottom: 2px;
+}
+
+
+
+
+
+
+/* === NAV style section */
+  #fillimi {
+    width: 100%;
+    background: #fff;
+    height:  70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .nav-bar  {
+    width: 900px;
+    height: auto;
+    font-size: 13pt;
+    position: relative;
+    text-decoration: none;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .menuIcn {
+    display: none;
+  }
+
+  #hamIcn {
+    display: none;
+  }
+
+  .logo {
+  display: inline-block;
+  float: left;
+  }
+    .logo>a>img{
+      width: 121px;
+      height: 51px;
+    }
+
+
+.menuwrap {
+  display: none;
+}
+
+.menu > ul {
+  margin: 0px;
+}
+
+  .menu  li {
+  width: 110px;
+  display: inline-block;
+  list-style-type: none;
+  text-decoration: none;
+  padding: 15px;
+  margin: 0px;
+  }
+
+  .menu li > a:hover{
+    background: #32c4f6;
+    color: #ecf0f1;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .navClose{
+    display: none;
+  }
+
+
+  #navScroll {
+    width: auto;
+    height: auto;
+    display: none;
+    position: fixed;
+    right: 12px;
+    float: right;
+    top: 10pt;
+    z-index: 99;
+    color: white;
+    padding: 10px;
+    background-color: rgba(50, 196, 246,0.5);
+    cursor: pointer;
+  }
+
+  #navScroll:hover {
+    background: #fff;
+    color: #fff;
+  }
+
+.navScrollMenu{
+  text-align: justify;
+  color: #fff;
+  float: right;
+  display: none;
+}
+
+.navScrollMenu ul li a {
+  color: #32c4f6;
+  font-size: 14pt;
+}
+
+.navScrollMenu ul li a:hover {
+  background: #32c4f6;
+  color: #fff;
+  padding: 2px;
+  border-radius: 10px;
+}
+
+/* === End of Nav style section*/
+
+
+
+
+
+
+
+
+/* === Banner Section*/
+
+.banner-bg {
+  background:linear-gradient(to right top, #5acff7, #20d8f4, #00e0e9, #00e6d6, #12ebbd);
+  background: -webkit-linear-gradient(to right top, #5acff7, #20d8f4, #00e0e9, #00e6d6, #12ebbd);
+  background-color: #00e6d6;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+
+}
+#banner {
+  width: auto;
+  height: 100vh;
+  bottom: 0;
+  top:0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("http://aggnosdent.com/img/banner-bg.jpg");
+  /*filter: blur(5px);*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-banner {
+  width: 900px;
+  height: auto;
+  margin: 0px;
+  float: right;
+  display: flex;
+  margin-top: 20%;
+  z-index: 99;
+
+}
+
+.banner-content {
+  display: inline-block;
+}
+
+.bannertitle {
+  width: 640px;
+  padding: 10px 10px 0 10px;
+  font-size: 32pt;
+  margin: 0px;
+  color: #20d8f4;
+  background-color:  rgba(255, 255, 255,1);
+  padding: 20px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius:  40px;
+  /*opacity: 0.5;*/
+}
+
+.bannermoto {
+  width: 350px;
+  padding: 12px;
+  font-size: 18pt;
+  color: #00e6d6;
+  background-color:  rgba(255, 255, 255,1);
+  padding: 20px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius:  40px;
+  border-bottom-left-radius:40px;
+  /*opacity: 0.5;*/
+}
+
+
+/* === End of Banner Section*/
+
+
+
+
+/* === Seperator section*/
+#seperator {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ecf0f1;
+
+}
+
+#seperator > span {
+  border: 0.5px #ecf0f1 solid;
+  width: 200px;
+}
+
+#seperator > i {
+  font-size: 28px;
+}
+/* === end of seperator*/
+
+
+
+
+
+
+
+
+
+
+/* === Services section   #F2F1EF;*/
+#mjekimet {
+  width: auto;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  background: #ece9e6; /* old browsers */
+  background: -webkit-linear-gradient(to right, #ece9e6, #ffffff);
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  /* background-image: url("http://aggnosdent.com/img/services/graph_ser_bg.png"); */
+  /* background-position: right; */
+  /* background-repeat: no-repeat; */
+  /* background-size: 460px auto; */
+  /* background-attachment: fixed; */
+}
+
+.title-services{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+    .title-services h1 {
+      color: #303030;
+    }
+
+
+.content-services{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-box {
+  width: 900px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: auto;
+  grid-column-gap: 70px;
+  text-align: center;
+  margin: 20px 20px 20px 20px;
+}
+
+
+.content-box  .box {
+  border: 1px #e2e2e2 solid;
+  width: 100%;
+  height: auto;;
+  background: #ffffff;
+  margin: 30px;
+}
+
+.content-box .box:hover {
+/*box-shadow: 3px 6px 8px rgba(59,89,153 ,0.7);*/
+    box-shadow: 7px 7px 15px 2px  rgba(46,61,73,0.15);
+}
+
+
+.box-1 {
+  /*border: 1px tomato solid;*/
+  width: auto;
+  height: auto;
+  background: #fff;
+  display: block;
+}
+
+
+.boxHeader-1 {
+  width: 100%;
+  height: 160px;
+  margin-top: 23px;
+  font-size: 72pt;
+  color: #32c4f6;
+}
+
+.boxHeader-1 > i {
+  background-image: linear-gradient(to right top, #83dfff, #77e8fe, #72f1f9, #75f8f0, #82ffe4);
+  background-color: #72f1f9;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.boxText-1 {
+   width: 390px;
+   height: auto;
+   width: auto;
+   text-align: center;
+ }
+
+ .boxText-1 > span {
+   width: auto;
+   height: auto;
+   color: #2c3e50;
+   font-size: 15pt;
+ }
+
+.boxFooter-1{
+  border-top: 1px #e2e2e2 solid;
+  width: 100%;
+  height: 40px;
+  display: block;
+  bottom: 0px;
+  margin-top: 20px;
+}
+
+.swapBtn-1 {
+  float: right;
+  font-size: 19pt;
+  color: #77e8fe;
+  padding-right: 7px;
+  cursor: pointer;
+}
+
+  .swapBtn-1:hover {
+    background-image: linear-gradient(to right top, #83dfff, #77e8fe, #72f1f9, #75f8f0, #82ffe4);
+    background-color: #72f1f9;
+    color: #fff;
+  }
+
+.swapBtn-1 > i {
+  margin:8px auto;
+  padding-left:  10pt;
+}
+
+
+.box-2 {
+  /*border: 1px tomato solid;*/
+  width: 350;
+  height: auto;
+  background: #fff;
+  box-shadow: 8px 10px 15px 4px #e3e3e3;
+  display: none;
+}
+
+
+.boxHeader1 {
+  height: 120px;
+  font-size: 42pt;
+  color: #2c3e50;
+  background: url("http://aggnosdent.com/img/services/ser3_e.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.boxHeader2 {
+  height: 120px;
+  font-size: 42pt;
+  color: #2c3e50;
+  background: url("http://aggnosdent.com/img/services/ser1_e.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.boxHeader3 {
+  height: 120px;
+  font-size: 42pt;
+  color: #2c3e50;
+  background: url("http://aggnosdent.com/img/services/ser5_e.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.boxHeader4 {
+  height: 120px;
+  font-size: 42pt;
+  color: #2c3e50;
+  background: url("http://aggnosdent.com/img/services/ser2_e.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.boxText-2 {
+   width:  320px;
+   height: auto;
+   text-align: left;
+   margin-top: 10px;
+   margin-left: 20px;
+   }
+
+ .boxText-2 > span {
+   width: 100%;
+   height: auto;
+   color: #2c3e50;
+   font-size: 26pt;
+   margin-top: 20px;
+ }
+
+
+.boxText-2 > ul {
+  padding: 0px;
+}
+
+.boxText-2 ul li {
+  padding: 6px 2px 6px 2px;
+  border-top: 0.6px solid #e2e2e2;
+  font-size: 14pt;
+  text-align: left;
+}
+
+
+.boxFooter-2 {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F2F1EF;
+  bottom: 0px;
+  color: #2c3e50;
+}
+
+    .boxFooter-2  i {
+      padding: 2px;
+      text-decoration: none;
+      margin: 0 20px 0 20px;
+    }
+
+.bookBtn {
+  font-size: 11pt;
+  border-radius: 25px;
+  padding: 3px 6px 3px 6px;
+  cursor: pointer;
+  margin-right: 10px;
+  background: #F5D76E;
+}
+
+.bookBtn:hover {
+  background: #87D37C;
+  color: #fff;
+  border: none;
+}
+
+.bookBtn a {
+  color: #2c3e50;
+}
+
+
+.swapBtn-2 {
+  border-radius: 50%;
+  font-size: 10px;
+  padding: 2px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  background: #DB5A6B;
+  color: #fff;
+  position: relative;
+  top: 27px;
+  left: 65px;
+}
+
+  .swapBtn-2:hover {
+    background: #fff;
+    color: #DB5A6B;
+    border: none;
+  }
+
+  .swapBtn-2 i {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+  }
+
+/* === End of services section*/
+
+
+
+
+
+
+
+
+/*About section  bg:  #F2F1EF*/
+  #doktoresha {
+  width: auto;
+  height: auto;
+  background: url("http://www.aggnosdent.com/img/profile-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.content-about {
+  height: auto;
+  width: auto;
+  text-align: center;
+  font-size: 12pt;
+  margin: 50px auto;
+  color: #34495e;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-about h1 {
+  margin-bottom: 40px;
+}
+
+.profile {
+  width: auto;
+  background: #fff;
+  border: 1px #e2e2e2 solid;
+  padding: 30px;
+
+}
+
+.profile:hover{
+  box-shadow: 3px 6px 10px rgba(76,74,72 ,1);
+}
+
+.profile img{
+  width: 230px;
+  height: 228px;
+  border-radius: 50%;
+  border: 4px #ecf0f1 solid;
+  }
+
+.experience {
+  width: 300px;
+  height: auto;
+  border: 1px #32c4f6 solid;
+  border-radius: 20px;
+  font-size: 10pt;
+  padding: 10px;
+  color: #2c3e50;
+  cursor: pointer;
+  }
+
+  .experience:hover {
+    background-color: #32c4f6;
+    color:#ecf0f1;
+    box-shadow: 0 11px 11px rgba(0,0,0,0.25), 0 3px 3px rgba(0,0,0,0.22);
+  }
+
+  .exppopup {
+    width: 300px;
+    font-size: 10pt;
+    text-align: justify;
+    margin-top: 9%;
+    border: 0.7px solid #ECF0F1;
+    padding: 10px ;
+    border-bottom-right-radius: 22px;
+    border-top-left-radius: 22px;
+    color: #2c3e50;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+    display: none;    /* it is displayed with JavaScript */
+  }
+
+  .exppopup:hover {
+        border: 0.7px solid #32c4f6;
+  }
+/*End of About sections*/
+
+
+
+
+
+/*Advisment secton */
+#tip {
+  width: 100%;
+  background: url("http://www.aggnosdent.com/img/services/graph1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  background-color: -webkit-linear-gradient(to right, #e3e3e3, #ffffff);
+  background-color: linear-gradient(to right, #e3e3e3, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .tip-content {
+    width: 100%;
+    height: auto;
+    float: right;
+    padding: 100px 400px 100px 200px ;
+  }
+
+  .tip-content div {
+    width: 440px;
+    float:  right;
+    font-size: 11pt;
+  }
+
+  .tip-content div  p{
+     color: #34495e;
+     font-size:16pt;"
+  }
+
+
+  .tip-box {
+    border: 1px solid #e2e2e2;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius:  40px;
+    border-bottom-left-radius:40px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px;
+  }
+  .tip-box:hover{
+    box-shadow: 2px 4px 20px rgba(149,165,166 ,1);
+    background-color: rgba(90,215,231 ,0.6);
+    color: #212121;
+  }
+/*end of tip section*/
+
+
+
+
+
+
+/*ofertat section*/
+#ofertat {
+  width: 100%;
+  background: #F2F1EF;
+  justify-content: center;
+  display: flex;
+  padding: 5% 0 5% 0;
+  background-image: url("http://aggnosdent.com/img/q_bg.png");
+  background-repeat: no-repeat;
+  background-size: 400px auto;
+  background-attachment: fixed;
+  background-position: right;
+}
+
+
+#ofertat h1 {
+  margin: 0 0 100px 0;
+  padding: 0px;
+  color: #2c3e50;
+}
+
+#ofertat h3 {
+  color: #34495e;
+  font-size: 14pt;
+}
+
+
+.ofertatBody {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ofertat-content {
+  justify-content: center;
+  margin: auto;
+  width: 1000px;
+  height: auto;
+  display: inline-flex;
+}
+
+    /*Card style*/
+  .ofertat-card{
+    width: 200px;
+    height: auto;
+    text-align: center;
+    padding:20px;
+    margin: 38px;
+    background: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    box-shadow: 12px 14px 15px 5px rgba(46,61,73,0.15);
+  }
+
+          /*PIC style*/
+        .pic-oferta img {
+          position: relative;
+          top: -65px;
+          width: 80px;
+          height: 79px;
+          border-radius: 50%;
+          border: 2px solid #fff;
+  }
+
+.card-blue {
+  border-top: 3px solid #32c4f6;
+  border-bottom: 40px solid #4D8FAC;
+}
+
+.card-purple {
+  border-top: 3px solid #F58F84;
+  border-bottom: 40px solid #C93756;
+}
+
+.card-green {
+  border-top: 3px solid #26A65B;
+  border-bottom: 40px solid #8DB255;
+}
+
+
+  .ofertat-card:hover{
+      border-bottom: 40px solid #7f8c8d;
+      border-top: 3px solid #D9B611;
+      -moz-transform: scale(1.03);
+      -webkit-transform: scale(1.03);
+      transform: scale(1.03);
+  }
+
+  .ofertat-card span {
+    border-bottom: 0.5px solid #F2F1EF;
+    font-size: 20pt;
+    padding: 3px;
+  }
+
+
+  #ofertat-btn {
+    position: fixed;
+    left: 30px;
+    bottom: 20px;
+    z-index: 99;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    border: none;
+    background: tomato;
+    color: #fff;
+    opacity: 0.7;
+  }
+
+#ofertat-btn:hover {
+    opacity: 100;
+  }
+    /*end of card style*/
+/*end of Testimonials/ofertat section*/
+
+
+
+
+
+
+
+/*Contact section*/
+	#kontakti  {
+	  width: 100%;
+	  background-image:  url("http://www.aggnosdent.com/img/cont_map_bg.png");
+	  background-size: cover;
+	  background-attachment: fixed;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	}
+
+	.cont-opacity-bg{
+	  width: auto;
+	  height: auto;
+	  background-color: rgba(44, 62, 80, 0.5);
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  padding: 5%;
+	}
+
+	.content-contact{
+	  width: 700px;
+	  height: auto;
+    background:linear-gradient(to right top, #5acff7, #20d8f4, #00e0e9, #00e6d6, #12ebbd);
+    background: -webkit-linear-gradient(to right top, #5acff7, #20d8f4, #00e0e9, #00e6d6, #12ebbd);
+    background-color: #00e6d6;
+	  padding: 2em;
+    border-radius: 20px;
+	}
+
+.content-contact:hover{
+    box-shadow: 3px 6px 10px rgba(76,74,72 ,1);
+  }
+
+	.form-group{
+	  margin-top: 40px;
+	}
+
+	.form-group form {
+	  display: grid;
+	  grid-template-columns: 30% 70%;
+	}
+
+	.fields {
+	    margin: 0;
+	}
+
+	.fields > .row {
+	  border-radius: 10px;
+	  background-color: #fff;
+	  padding: 7px;
+	  margin: 5px;
+	}
+
+	.fields > .row > input{
+	  width: 90%;
+	  border-radius: 10px;
+	  background-color: #fff;
+	  padding: 7px;
+	  border: 0px;
+	}
+
+	.fields > .row > input:focus{
+	  outline: none;
+	  /*border: 1px tomato solid;*/
+		caret-color: #2980b9;
+	}
+
+	.msgbox  {
+	  border-radius: 10px;
+	  background-color: #fff;
+	  padding: 20px;
+	}
+
+	.msgbox > textarea {
+	  height: auto;
+	  max-width: 400px;
+    width: 400px;
+	  border: 0px;
+	  border-radius: 10px;
+	  background-color: #fff;
+	  padding: 7px;
+	}
+
+	.msgbox > textarea:focus{
+	  outline: none;
+	  /*border: 1px white solid;*/
+    caret-color: #2980b9;
+	}
+
+
+	form .row-send > input {
+	  width: 60px;
+	  border-radius: 10px;
+	  background-color: #175858;
+	  padding: 7px;
+	  margin: 5px;
+	  border: 0px;
+	  color: #e3e3e3;
+	  float:  right;
+	}
+
+	form .row-send > input:hover{
+	  background-color: #2ecc71;
+	  color: #ecf0f1;
+	  cursor: pointer;
+	}
+
+	.contact-bar{
+	  border-top: 0.1px #d3fdff solid;
+	  margin-top: 7px;
+	  text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+	}
+
+	.contact-bar > i {
+	  padding: 1em;
+	  color: #fff;;
+	}
+
+	.contact-bar > i > span{
+	  padding: 10px;
+	  color: #5d5a5b;
+    font-size: 10pt;
+    font-family: sans-serif;
+	}
+
+  .show-hide-map {
+    justify-content:center;
+    align-items:center;
+    display:flex;
+  }
+
+      .show-hide-map > div {
+        width: auto;
+        background: #ff82a9;
+        border-radius: 15px;
+        padding: 10px;
+        color: #fff;
+        font-size: 8pt;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+      .show-hide-map > div:hover {
+        background: #fff;
+        color: #ff82a9;
+      }
+
+      .showMapBtn {
+        display: block;
+      }
+
+      .hideMapBtn {
+        display: none;
+      }
+	/*end of Contact section*/
+
+
+
+      /*MAP section*/
+      .iframeGoogle{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        margin: 0;
+        display: none;
+      }
+
+      .iframeGoogle > iframe{
+        width: 100% ;
+        height: 600px;
+      }
+      /*end of map section*/
+
+
+
+
+
+
+
+/*Footer section*/
+#footer{
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+}
+
+.content-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.copyright {
+  font-size: 11pt;
+  padding: 10px;
+  color: #6C7A89;
+}
+
+.copyright  a {
+  text-decoration: none;
+}
+
+.copyright:hover {
+  color: #32c4f6;
+}
+
+.social-footer  .fa-facebook-square{
+  padding: 10pt;
+  color: #6C7A89;
+  font-size: 14pt;
+}
+
+.social-footer  .fa-facebook-square:hover{
+  color: #3498db;
+}
+
+.social-footer  .fa-instagram{
+  padding: 10pt;
+  color:#6C7A89;
+  font-size: 14pt;
+}
+
+.social-footer  .fa-instagram:hover{
+  color: #f442aa;
+}
+
+
+      .webdev{
+        color: #D2D7D3;
+        font-size: 9pt;
+        padding: 2px;
+        float: right;
+      }
+        .webdev:hover {
+          background-color: #D24D57;
+          border-radius: 10px;
+          color: #e2e2e2;
+        }
+/*end of footer section*/
+
+
+
+
+/*Go to top button*/
+#goTop {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 10px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(50, 196, 246,0.5);; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+}
+
+#goTop:hover {
+    background-color: #eee; /* Add a dark-grey background on hover */
+    color: #32c4f6;
+}
+
+
+
+
+/*==================================
+====================================
+============    MEDIA QUERY
+====================================
+====================================*/
+
+/*max-width it;s user determination, i.e. this web is butild on width 900px;
+ so in all smaller devices should follow the below css style*/
+
+@media screen and (max-width:900px){
+
+  h1 {
+      text-transform: uppercase;
+      font-weight: bold;
+      color:#fff;
+      font-size: 22pt;
+      margin-bottom: 2px;
+  }
+
+  h2 {
+      text-transform: uppercase;
+      font-weight: bold;
+      color:#ECEFF1;
+      font-size: 12pt;
+      margin-bottom: 2px;
+  }
+
+
+
+  /* === NAV style section */
+    #fillimi {
+      width: 100%;
+      height: auto;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /*z-index: 1;
+      position: fixed;*/
+    }
+
+    .nav-bar  {
+      width: 100%;
+      height: auto;
+      font-size: 10pt;
+      text-decoration: none;
+      margin: 0;
+      padding: 7px;
+      text-align: center;
+    }
+
+    .menuIcn  {
+      display: block;
+      float: right;
+      padding-left: 70px;
+      font-size: 16pt;
+    }
+
+    .menuIcn  ul li a:hover {
+      background:  #32c4f6;
+      border-top: 10px;
+      color: #fff;
+    }
+
+    #hamIcn {
+      float: right;
+      margin: 12px 12px auto;;
+      color: #32c4f6;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+
+    .menu {
+      display: none;
+    }
+
+    .menuwrap {
+      margin-top: 3%;
+      width: 120px;
+      display:none;
+    }
+
+    ul {
+      text-align: justify;
+    }
+
+    .menuwrap  li {
+    display: inline-block;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 7px;
+    margin: 0px;
+    }
+
+
+    .menuwrap li  a:hover{
+      background: #32c4f6;
+      color: #ecf0f1;
+      padding: 12px;
+    }
+
+    .navClose{
+      display: block;
+      color: coral;
+      font-size: 13pt;
+      cursor: pointer;
+    }
+  /* === End of Nav style section*/
+
+
+
+
+
+  /* === Banner Section*/
+  #banner {
+    width: auto;
+    height: 100vh;
+    bottom: 0;
+    top:0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("http://gent.xp3.biz/aggnos/img/banner-bg.jpg");
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+.content-banner {
+  padding: 20px;
+}
+
+  .bannertitle {
+    width: auto;
+    font-size: 22pt;
+    padding: 30px;
+  }
+
+  .bannertitle > span {
+    font-size: 35px;
+  }
+
+  .bannermoto {
+    width: auto;
+    font-size: 20px;
+  }
+
+  /* === End of Banner Section*/
+
+
+
+
+  /* === Seperator section*/
+  #seperator {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #bdc3c7;
+  }
+
+  #seperator > span {
+    border: 0.5px #bdc3c7 solid;
+    width: 100px;
+  }
+
+  #seperator > i {
+    font-size: 18px;
+  }
+  /* === end of seperator*/
+
+
+
+
+
+
+
+
+
+  /* === Services section*/
+  #mjekimet {
+    width: auto;
+    height: auto;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    background: #ece9e6;
+    background: -webkit-linear-gradient(to right, #ece9e6, #ffffff);
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+  }
+
+  .title-services h1 {
+    margin: 30px 0 30px 0;
+  }
+
+
+  .content-box {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-box  .box {
+    border: 1px #e2e2e2 solid;
+    width: auto;
+    height: auto;;
+    background: #ffffff;
+    margin: 0 0 20px 0;
+    margin-bottom: 100px;
+    /* padding: 10% 10% 0 10%; */
+  }
+
+
+
+
+  .boxText-1>span {
+        padding: 10px 10px 10px 10px;
+  }
+
+
+  .box-2 {
+    /*border: 1px tomato solid;*/
+    width: auto;
+    height: auto;
+    background: #fff;
+    display: none;
+  }
+
+    .box-2  > span {
+      font-size: 16pt;
+    }
+
+.boxText-2 ul {
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.boxText-2 ul li {
+  margin-right: 5px;
+  width: auto;
+  font-size: 14pt;
+}
+
+.boxFooter-2 span {
+ width: auto;
+}
+
+  .bookBtn span  {
+    font-size: 10pt;
+    margin: 0;
+  }
+
+  .bookBtn  i {
+    width: auto;
+  }
+
+.swapBtn-2{
+  position: relative;
+  font-size: 10px;
+  padding: 2px;
+  width: auto;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  top: 27px;
+  left:  60px;
+}
+
+.swapBtn-2 i {
+  font-size: 15px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#doktoresha {
+  width: auto;
+}
+
+
+
+.exppopup {
+  width: 220px;
+}
+
+/*Advisement section*/
+#tip {
+  width: auto;
+  background: url("http://www.aggnosdent.com/img/services/graph1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-color: -webkit-linear-gradient(to right, #e3e3e3, #ffffff);
+  background-color: linear-gradient(to right, #e3e3e3, #ffffff);
+  display: inline-block;
+}
+
+  .tip-content {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin: 25px 0 25px 0;
+  }
+
+  .tip-content div {
+    width: auto;;
+    margin: 0px;
+  }
+
+  .tip-content div  p{
+     color: #34495e;
+     font-size:12pt;"
+  }
+
+/*end of tip section*/
+
+
+
+
+
+/*Ofertat - ofertat section*/
+#ofertat {
+  width: 100%;
+  background: #F2F1EF;
+  background-image: url("http://aggnosdent.com/img/q_bg.png");
+  background-repeat: no-repeat;
+  background-size: 100px auto;
+  background-attachment: fixed;
+  background-position:   right;
+}
+
+
+.ofertat-content {
+  justify-content: center;
+  margin: auto;
+  width: auto;
+  height: auto;
+  display: inline-block;
+}
+
+.ofertat-card{
+  width: auto;
+  height: auto;
+  padding-bottom: 40px;
+  margin-bottom: 100px;
+}
+
+  #ofertat-btn {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 99;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border: none;
+    background: tomato;
+    color: #fff;
+    font-size: 10px;
+    opacity: 0.7;
+  }
+
+#ofertat-btn:hover {
+    opacity: 100;
+  }
+/*end of Ofertat - ofertat section*/
+
+
+
+
+
+
+/* Contact section*/
+
+#kontakti {
+  width: 100%;
+}
+
+.cont-opacity-bg {
+width: auto;
+}
+
+
+.content-contact {
+  max-width: auto;
+  height: auto;
+  background-color: #2c3e50;
+  padding: 2em;
+  display: inline-block;
+}
+
+
+
+
+  .msgbox  {
+    padding: 4px 4px 4px 10px;
+  }
+
+	.msgbox > textarea {
+	  height: 40px;
+	  max-width: 120px;
+	  border: 0px;
+	  border-radius: 10px;
+	  background-color: #fff;
+
+	}
+
+  /*end of contact section*/
+
+
+
+
+
+/*MAP section*/
+  .iframeGoogle > iframe{
+    width: 100%;
+    height: 300px;
+  }
+/*end of Map Section*/
+
+
+
+
+
+      /*Footer section*/
+      #footer{
+        width: auto;
+        height: auto;
+        background-color: #fff;
+      }
+
+      .content-footer{
+        display:  flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      .copyright {
+        font-size: 10pt;
+      }
+
+
+
+
+
+
+
+}/*end of media*/
