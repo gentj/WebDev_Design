@@ -16,7 +16,7 @@
 
 
 /*added by gent jusufi  Increase the duroation of animation*/
-/* .animated.bounceInLeft{
+.animated.bounceInLeft{
   animation-duration: 3s;
   animation-delay: 1s;
 }
@@ -24,7 +24,7 @@
 .fadeIn {
   animation-duration: 3s;
   animation-delay: 1s;
-} */
+}
 
 /*end of added by Gent */
 

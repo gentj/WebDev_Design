@@ -115,91 +115,90 @@ function menuRoll() {
 // ==============
 // ==============
 //1st_ getting btn1 ID from i icon to be clicked - act as button in footer
+var btn1 = document.getElementById('btn1');
+var btn2 = document.getElementById('btn2');
+var btn3 = document.getElementById('btn3');
+var btn4 = document.getElementById('btn4');
+var btn5 = document.getElementById('btn5');
+var btn6 = document.getElementById('btn6');
+var btn7 = document.getElementById('btn7');
+var btn8 = document.getElementById('btn8');
 
-var btn11 = document.getElementById("btn11");
-var btn12 = document.getElementById("btn12");
-var card1 = document.getElementById("card1");
-var card12 = document.getElementById("card12");
+//2nd_ getting id of div with class box-1...n to be triggered fro changing its class css display property: from none to block and vice-a-versa
+var box1 = document.getElementById('box-1');
+var box2 = document.getElementById('box-2');
+var box3 = document.getElementById('box-3');
+var box4 = document.getElementById('box-4');
+var box5 = document.getElementById('box-5');
+var box6 = document.getElementById('box-6');
+var box7 = document.getElementById('box-7');
+var box8 = document.getElementById('box-8');
 
-var btn21 = document.getElementById("btn21");
-var btn22 = document.getElementById("btn22");
-var card2 = document.getElementById("card2");
-var card22 = document.getElementById("card22");
-
-
-var btn31 = document.getElementById("btn31");
-var btn32 = document.getElementById("btn32");
-var card3 = document.getElementById("card3");
-var card32 = document.getElementById("card32");
-
-
-var btn41 = document.getElementById("btn41");
-var btn42 = document.getElementById("btn42");
-var card4 = document.getElementById("card4");
-var card42 = document.getElementById("card42");
-
-
-
-
-function openCard1(){
-  card1.className ="none";
-  card12.className ="card-services animated fadeIn";
+// swap
+function swap1() {
+    box1.style.display ='none';
+    box2.style.display ='block';
+    box2.className = 'box-2 animated flipInY';
 }
 
-function closeCard1(){
-  card12.className ="none";
-  card1.className ="card-services animated fadeIn";
+function swap2() {
+    box3.style.display ='none';
+    box4.style.display ='block';
+    box4.className = 'box-2 animated flipInY';
 }
 
 
-function openCard2(){
-  card2.className ="none";
-  card21.className ="card-services animated fadeIn";
-}
-
-function closeCard2(){
-  card21.className ="none";
-  card2.className ="card-services animated fadeIn";
+function swap3() {
+    box5.style.display ='none';
+    box6.style.display ='block';
+    box6.className = 'box-2 animated flipInY';
 }
 
 
-function openCard3(){
-  card3.className ="none";
-  card31.className ="card-services animated fadeIn";
-}
-
-function closeCard3(){
-  card31.className ="none";
-  card3.className ="card-services animated fadeIn";
-}
-
-
-function openCard4(){
-  card4.className ="none";
-  card41.className ="card-services animated fadeIn";
-}
-
-function closeCard4(){
-  card41.className ="none";
-  card4.className ="card-services animated fadeIn";
+function swap4() {
+    box7.style.display ='none';
+    box8.style.display ='block';
+    box8.className = 'box-2 animated flipInY';
 }
 
 
 
+//unSwap
+function unSwap1() {
+  box2.style.display ='none';
+  box1.style.display ='block';
+  box1.className = 'box-1 animated flipInY';
+}
 
-btn11.addEventListener("click", openCard1);
-btn12.addEventListener("click", closeCard1);
+function unSwap2() {
+  box4.style.display ='none';
+  box3.style.display ='block';
+  box3.className = 'box-1 animated flipInY';
+}
 
-btn21.addEventListener("click", openCard2);
-btn22.addEventListener("click", closeCard2);
+function unSwap3() {
+  box6.style.display ='none';
+  box5.style.display ='block';
+  box5.className = 'box-1 animated flipInY';
+}
 
-btn31.addEventListener("click", openCard3);
-btn32.addEventListener("click", closeCard3);
+function unSwap4() {
+  box8.style.display ='none';
+  box7.style.display ='block';
+  box7.className = 'box-1 animated flipInY';
+}
 
-btn41.addEventListener("click", openCard4);
-btn42.addEventListener("click", closeCard4);
+// event listeners clicking on buttons
+btn1.addEventListener('click', swap1);
+btn2.addEventListener('click', unSwap1);
+btn3.addEventListener('click', swap2);
+btn4.addEventListener('click', unSwap2);
+btn5.addEventListener('click', swap3);
+btn6.addEventListener('click', unSwap3);
+btn7.addEventListener('click', swap4);
+btn8.addEventListener('click', unSwap4);
 
-
+// console.log(contServ1, serviceMod);
 
 // ==============
 // ============== END OF SERVICES  SECTION
