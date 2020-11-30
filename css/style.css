@@ -17,8 +17,13 @@ Headers #FFF or #2c3e50
 */
 
 
-ul li {
-    list-style: none;
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
 }
 a:hover,
 a:visited,
@@ -48,26 +53,26 @@ h2 {
 
 
 /* === NAV style section */
-  #fillimi {
-    width: 100%;
-    background: #fff;
-    height:  70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#fillimi {
+  width: 100%;
+  background: #fff;
+  height:  70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  }
+}
 
-  .nav-bar  {
-    width: 900px;
-    height: auto;
-    font-size: 13pt;
-    position: relative;
-    text-decoration: none;
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-  }
+.nav-bar  {
+  width: 900px;
+  height: auto;
+  font-size: 13pt;
+  position: relative;
+  text-decoration: none;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
 
   .menuIcn {
     display: none;
@@ -266,21 +271,15 @@ h2 {
 
 
 
-
-
-
-
-
-
 /* === Services section   #F2F1EF;*/
 #mjekimet {
   width: auto;
   height: auto;
   padding: 0px;
   margin: 0px;
-  background: #ece9e6; /* old browsers */
-  background: -webkit-linear-gradient(to right, #ece9e6, #ffffff);
-  background: linear-gradient(to right, #ece9e6, #ffffff);
+  background: #9e9d9c; /* old browsers */
+  /* background: -webkit-linear-gradient(to right, #ece9e6, #ffffff);
+  background: linear-gradient(to right, #ece9e6, #ffffff); */
   /* background-image: url("http://aggnosdent.com/img/services/graph_ser_bg.png"); */
   /* background-position: right; */
   /* background-repeat: no-repeat; */
@@ -288,259 +287,156 @@ h2 {
   /* background-attachment: fixed; */
 }
 
-.title-services{
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  text-align: center;
-}
-    .title-services h1 {
-      color: #303030;
-    }
-
-
-.content-services{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.content-box {
-  width: 900px;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-  display: grid;
-  grid-template-columns: 40% 40%;
-  grid-template-rows: auto;
-  grid-column-gap: 70px;
-  text-align: center;
-  margin: 20px 20px 20px 20px;
-}
-
-
-.content-box  .box {
-  border: 1px #e2e2e2 solid;
-  width: 100%;
-  height: auto;;
-  background: #ffffff;
-  margin: 30px;
-}
-
-.content-box .box:hover {
-/*box-shadow: 3px 6px 8px rgba(59,89,153 ,0.7);*/
-    box-shadow: 7px 7px 15px 2px  rgba(46,61,73,0.15);
-}
-
-
-.box-1 {
-  /*border: 1px tomato solid;*/
+.content {
   width: auto;
-  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("http://aggnosdent.com/img/services/graph_ser_bg.png");
+  background-color: #e9e7e7;
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: fixed;
+  padding: 40px;
+
+}
+
+.card-container {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+
+}
+
+.card-services {
   background: #fff;
-  display: block;
-}
-
-
-.boxHeader-1 {
-  width: 100%;
-  height: 160px;
-  margin-top: 23px;
-  font-size: 72pt;
-  color: #32c4f6;
-}
-
-.boxHeader-1 > i {
-  background-image: linear-gradient(to right top, #83dfff, #77e8fe, #72f1f9, #75f8f0, #82ffe4);
-  background-color: #72f1f9;
-  color: #fff;
+  width: 300px;
   border-radius: 10px;
+  margin: 20px;
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+  color: #ABB7B7;
+  box-shadow:  0 1px 4px rgba(0,0,0,0.16),
+               0 1px 4px rgba(0,0,0,0.23);
 }
 
-.boxText-1 {
-   width: 390px;
-   height: auto;
-   width: auto;
-   text-align: center;
- }
-
- .boxText-1 > span {
-   width: auto;
-   height: auto;
-   color: #2c3e50;
-   font-size: 15pt;
- }
-
-.boxFooter-1{
-  border-top: 1px #e2e2e2 solid;
-  width: 100%;
-  height: 40px;
-  display: block;
-  bottom: 0px;
-  margin-top: 20px;
-}
-
-.swapBtn-1 {
-  float: right;
-  font-size: 19pt;
-  color: #77e8fe;
-  padding-right: 7px;
-  cursor: pointer;
-}
-
-  .swapBtn-1:hover {
-    background-image: linear-gradient(to right top, #83dfff, #77e8fe, #72f1f9, #75f8f0, #82ffe4);
-    background-color: #72f1f9;
-    color: #fff;
-  }
-
-.swapBtn-1 > i {
-  margin:8px auto;
-  padding-left:  10pt;
+.header {
+  width: auto;
+  height: 200px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background: #06beb6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 
-.box-2 {
-  /*border: 1px tomato solid;*/
-  width: 350;
-  height: auto;
-  background: #fff;
-  box-shadow: 8px 10px 15px 4px #e3e3e3;
+.none {
   display: none;
 }
 
-
-.boxHeader1 {
-  height: 120px;
-  font-size: 42pt;
-  color: #2c3e50;
-  background: url("http://aggnosdent.com/img/services/ser3_e.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+.header2{
+  background: linear-gradient(to right top, #06a6be, #06aec9, #08b5d4, #0cbddf, #12c5eb);
+  width: auto;
+  height: 200px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
-
-.boxHeader2 {
-  height: 120px;
-  font-size: 42pt;
-  color: #2c3e50;
-  background: url("http://aggnosdent.com/img/services/ser1_e.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+.title {
+  color: #174253;
 }
 
-
-.boxHeader3 {
-  height: 120px;
-  font-size: 42pt;
-  color: #2c3e50;
-  background: url("http://aggnosdent.com/img/services/ser5_e.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-
-.boxHeader4 {
-  height: 120px;
-  font-size: 42pt;
-  color: #2c3e50;
-  background: url("http://aggnosdent.com/img/services/ser2_e.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-
-.boxText-2 {
-   width:  320px;
-   height: auto;
-   text-align: left;
-   margin-top: 10px;
-   margin-left: 20px;
-   }
-
- .boxText-2 > span {
-   width: 100%;
-   height: auto;
-   color: #2c3e50;
-   font-size: 26pt;
-   margin-top: 20px;
- }
-
-
-.boxText-2 > ul {
-  padding: 0px;
-}
-
-.boxText-2 ul li {
-  padding: 6px 2px 6px 2px;
-  border-top: 0.6px solid #e2e2e2;
-  font-size: 14pt;
+.list {
   text-align: left;
+
+}
+
+.list-li {
+  padding: 10px;
+  background: rgba(236, 240, 241, 0.6);
+  margin-bottom: 10px;
+  color: #174253;
 }
 
 
-.boxFooter-2 {
-  width: 100%;
-  height: 55px;
-  display: flex;
+
+.ser-icon {
+  font-size: 70pt;
+  color: #ffff;
+  position: relative;
+  top: 20%;
+}
+
+.card-footer-li {
+    display: inline;
+    margin: 0 10px;
+    font-size: 15px;
+}
+
+
+
+.buttonOpen {
+  height: 20px;
+  margin: 30px 120px 3px 120px;
+  border-top: 1px solid #e2e2e2;
+  color:  #608b88;
+  cursor: pointer;
+  }
+
+
+
+.buttonOpen:hover {
+  color: #06beb6;
+}
+
+
+.buttonAppointment{
+  position: relative;
+  right: 20px;
+  top: 20px;
+}
+
+.buttonAppointment:hover {
+  color: #82BE11;
+}
+
+.buttonMap{
+  position: relative;
+  left: 20px;
+  top: 20px;
+
+}
+
+.buttonMap:hover{
+color:  #be0656;
+}
+
+
+.buttonClose {
+  position: relative;
+  left: 264px;
+  top: 27px;
+  background: #ECE9E6;
+  color: #13adad;
+  width: 20px;
+  height: 20px;
   justify-content: center;
   align-items: center;
-  background: #F2F1EF;
-  bottom: 0px;
-  color: #2c3e50;
-}
-
-    .boxFooter-2  i {
-      padding: 2px;
-      text-decoration: none;
-      margin: 0 20px 0 20px;
-    }
-
-.bookBtn {
-  font-size: 11pt;
-  border-radius: 25px;
-  padding: 3px 6px 3px 6px;
+  display: flex;
+  font-size: 16pt;
+  margin: 0 2px;
+  border-radius: 50px;;
   cursor: pointer;
-  margin-right: 10px;
-  background: #F5D76E;
 }
 
-.bookBtn:hover {
-  background: #87D37C;
-  color: #fff;
-  border: none;
+.buttonClose:hover {
+  /* background: #F62459; */
+  color: #F62459; 
 }
-
-.bookBtn a {
-  color: #2c3e50;
-}
-
-
-.swapBtn-2 {
-  border-radius: 50%;
-  font-size: 10px;
-  padding: 2px;
-  width: 15px;
-  height: 15px;
-  cursor: pointer;
-  background: #DB5A6B;
-  color: #fff;
-  position: relative;
-  top: 27px;
-  left: 65px;
-}
-
-  .swapBtn-2:hover {
-    background: #fff;
-    color: #DB5A6B;
-    border: none;
-  }
-
-  .swapBtn-2 i {
-    margin: 0;
-    padding: 0;
-    font-size: 15px;
-  }
-
 /* === End of services section*/
 
 
@@ -1285,92 +1181,51 @@ h2 {
     background: -webkit-linear-gradient(to right, #ece9e6, #ffffff);
     background: linear-gradient(to right, #ece9e6, #ffffff);
   }
-
-  .title-services h1 {
-    margin: 30px 0 30px 0;
-  }
-
-
-  .content-box {
-    width: auto;
-    height: auto;
-    display: inline-block;
+  .content {
     justify-content: center;
     align-items: center;
+    display: grid;
+    background-image: none;
   }
 
-  .content-box  .box {
-    border: 1px #e2e2e2 solid;
-    width: auto;
-    height: auto;;
-    background: #ffffff;
-    margin: 0 0 20px 0;
-    margin-bottom: 100px;
-    /* padding: 10% 10% 0 10%; */
-  }
-
-
-
-
-  .boxText-1>span {
-        padding: 10px 10px 10px 10px;
-  }
-
-
-  .box-2 {
-    /*border: 1px tomato solid;*/
-    width: auto;
-    height: auto;
-    background: #fff;
-    display: none;
-  }
-
-    .box-2  > span {
-      font-size: 16pt;
-    }
-
-.boxText-2 ul {
-  padding: 0;
-  margin: 10px 0 0 0;
-}
-
-.boxText-2 ul li {
-  margin-right: 5px;
-  width: auto;
-  font-size: 14pt;
-}
-
-.boxFooter-2 span {
- width: auto;
-}
-
-  .bookBtn span  {
-    font-size: 10pt;
-    margin: 0;
-  }
-
-  .bookBtn  i {
+  .card-container {
+    display: inline-grid;
+    align-items: center;
     width: auto;
   }
 
-.swapBtn-2{
-  position: relative;
-  font-size: 10px;
-  padding: 2px;
-  width: auto;
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  top: 27px;
-  left:  60px;
+  .card-services {
+    width: 270px;
+    font-size: 14px;
+  }
+
+
+
+.card-footer{
+  justify-content: center;
+  align-items: center;
+  display: flex
+}
+.buttonAppointment{
+  color: #82BE11;
 }
 
-.swapBtn-2 i {
+.buttonMap{
+color:  #be0656;
+}
+
+
+.buttonClose {
+  left:  158px;
+  top: 28px;
   font-size: 15px;
-  margin: 0px;
-  padding: 0px;
-}
 
+  }
+
+/* end of serivce section */
+
+
+ /* doc section */
 #doktoresha {
   width: auto;
 }
